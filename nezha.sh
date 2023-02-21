@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # 传哪吒三个参数
-NEZHA_SERVER=n.icbc.ml
-NEZHA_PORT=45555
-NEZHA_KEY=ZTf3YL9zM1v3prQtAL
+NEZHA_SERVER=S1
+NEZHA_PORT=S2
+NEZHA_KEY=S3
 
 # 三个变量不全则不安装哪吒客户端
 check_variable() {
