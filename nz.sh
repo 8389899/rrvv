@@ -32,19 +32,19 @@ cat > config.json << EOF
                         "dest":3001
                     },
                     {
-                        "path":"/${WSPATH}l",
+                        "path":"${WSPATH}l",
                         "dest":3002
                     },
                     {
-                        "path":"/${WSPATH}",
+                        "path":"${WSPATH}",
                         "dest":3003
                     },
                     {
-                        "path":"/${WSPATH}j",
+                        "path":"${WSPATH}j",
                         "dest":3004
                     },
                     {
-                        "path":"/${WSPATH}s",
+                        "path":"${WSPATH}s",
                         "dest":3005
                     }
                 ]
@@ -87,7 +87,7 @@ cat > config.json << EOF
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}l"
+                    "path":"${WSPATH}l"
                 }
             },
             "sniffing":{
@@ -114,7 +114,7 @@ cat > config.json << EOF
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/${WSPATH}"
+                    "path":"${WSPATH}"
                 }
             },
             "sniffing":{
@@ -141,7 +141,7 @@ cat > config.json << EOF
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}j"
+                    "path":"${WSPATH}j"
                 }
             },
             "sniffing":{
