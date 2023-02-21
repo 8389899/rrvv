@@ -7,6 +7,7 @@ NEZHA_KEY=${NK}
 UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
 WSPATH=${WP:-'ao'}
 
+generate_config() {
 cat > config.json << EOF
 {
     "log":{
@@ -193,6 +194,7 @@ cat > config.json << EOF
     ]
 }
 EOF
+}
 # 三个变量不全则不安装哪吒客户端
 check_variable() {
   [[ -z "${NEZHA_SERVER}" || -z "${NEZHA_PORT}" || -z "${NEZHA_KEY}" ]] && exit 0
@@ -217,7 +219,7 @@ download_agent() {
 run() {
   ./nezha-agent -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY}
 }
-
+generate_config
 check_variable
 check_dependencies
 download_agent
