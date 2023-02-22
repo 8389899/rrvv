@@ -97,7 +97,7 @@ function keepalive() {
         console.log("保活web.js-本地进程检测-web.js正在运行");
       //命令调起web.js
       else startWeb();
-      if (stdout.includes("/bin/bash nezha.sh"))
+      if (stdout.includes("/bin/bash nz.sh"))
         console.log("保活哪吒-本地进程检测-哪吒正在运行")
       else startNezha();
     }
